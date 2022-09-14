@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:gravity="center_horizontal"
+  android:orientation="vertical">
+
+  <RelativeLayout
+    android:layout_width="@dimen/_100hsdp"
+    android:layout_height="wrap_content">
+
+    <dev.hardik.imagepicker.CircularImageView
+      android:id="@+id/imgProfile"
+      android:layout_width="@dimen/_100hsdp"
+      android:layout_height="@dimen/_100hsdp"
+      android:layout_marginTop="@dimen/_5hsdp"
+      android:layout_marginBottom="@dimen/_10hsdp"
+      android:scaleType="centerInside"
+      android:src="@drawable/ic_user"
+      app:civ_border_color="@android:color/white"
+      app:civ_border_width="2dp" />
+
+    <dev.hardik.imagepicker.CircularImageView
+      android:id="@+id/imgPlus"
+      android:layout_width="@dimen/_20hsdp"
+      android:layout_height="@dimen/_20hsdp"
+      android:layout_alignBottom="@id/imgProfile"
+      android:layout_alignParentEnd="true"
+      android:layout_alignParentRight="true"
+      android:src="@drawable/ic_add_button"
+      app:civ_shadow="true"
+      app:civ_shadow_radius="1" />
+
+  </RelativeLayout>
+
+  <TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/_5hsdp"
+    android:text="@string/profile_title"
+    android:textColor="@android:color/white"
+    android:textSize="@dimen/_16font_ssp" />
+
+  <TextView
+    android:id="@+id/profile_desc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_20hsdp"
+    android:gravity="center_horizontal"
+    android:padding="@dimen/_10hsdp"
+    android:text="@string/profile_desc"
+    android:textColor="@color/profile_desc"
+    android:textSize="@dimen/_12font_ssp" />
+
+  <View
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_48hsdp"
+    android:background="@android:color/holo_red_dark" />
+
+</LinearLayout>
